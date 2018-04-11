@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+    background-color: #8FC73E;
+    color: white;
+    font-style: bold;
+    font-family: Impact, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+body {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover img {
+    filter: brightness(50%);
+}
+
+a:hover .button {
+    border-color: green;
+    background-color: #618a28;
+}
+
+a:hover .name {
+    opacity: 100;
+    filter: unset;
+}
+
+.content {
+    max-width: 70%;
+    height: 90%;
+    padding: 1%;
+}
+
+.button {
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 5px;
+    display: inline-block;
+    margin: 1%;
+    max-width: 16%;
+    min-width: 70px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: border-color .4s ease-in-out;
+    -moz-transition: border-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+}
+
+.name {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: .3;
+    font-size: 2vw;
+    transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    margin: 10%;
+    transition: filter .4s ease-in-out;
+    -moz-transition: filter .4s ease-in-out;
+}
+
+@media(max-width: 800px) {
+    html {
+        text-shadow: 1px 1px black;
+    }
+    
+    .content {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button {
+        border-width: 3px;
+    }
+    
+    .name {
+        font-size: 3vw;
+    }
+}
